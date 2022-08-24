@@ -17,6 +17,10 @@ body {
     position: relative;
 }
 
+.strike-through {
+    text-decoration: line-through;
+}
+
 #languages {
     position: absolute;
     right: 1em;
@@ -93,7 +97,7 @@ footer.site-footer {
         color: rgba(255, 255, 255, 0.8);
         display: block;
 
-        span {
+        span.block {
             display: block;
         }
 
