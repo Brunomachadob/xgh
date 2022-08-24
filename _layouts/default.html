@@ -16,6 +16,8 @@
     <title>{{ site.title }}</title>
 
     <script>
+      const BASE_PATH = "/xgh/"
+
       window.onload = onLoad;
 
       function onLoad() {
@@ -47,20 +49,21 @@
           window.location.hash = "";
 
           if (language === "en") {
-              window.location.pathname = "/"
+              window.location.pathname = BASE_PATH;
           } else {
-              window.location.pathname = "/" + language + ".html"
+              window.location.pathname = BASE_PATH + language + ".html"
           }
       }
 
       function resolvePageLanguage() {
           const currentPath = window.location.pathname
 
-          if (!currentPath || currentPath === "/") {
+
+          if (!currentPath || currentPath === "/" || currentPath === BASE_PATH) {
               return "en"
           }
 
-          return window.location.pathname.substring(1, window.location.pathname.indexOf("."))
+          return window.location.pathname.substring(BASE_PATH.length, window.location.pathname.indexOf("."))
       }
     
     </script>
