@@ -64,12 +64,16 @@ main.main-content {
 }
 
 header.page-header {
-    color: $header-heading-color;
+    padding: 2rem 3rem;
     background-color: $header-bg-color;
     background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
 
     .btn {
         margin-bottom: 0;
+    }
+
+    .logo {
+        width: 15em;
     }
 }
 
