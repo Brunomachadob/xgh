@@ -133,4 +133,4 @@ Time is of the essence, so copy and paste, quickly!
 ---
 
 
-**Translation credits**: [banaslee](https://github.com/banaslee)
+**Translation:** [banaslee](https://github.com/banaslee)

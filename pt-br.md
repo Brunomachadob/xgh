@@ -132,4 +132,4 @@ O tempo é essencial, então copie e cole, rapidamente!
 
 ---
 
-**Translation credits**: [banaslee](https://github.com/banaslee)
+**Original source:** [gohorseprocess.com.br/extreme-go-horse-xgh](https://gohorseprocess.com.br/extreme-go-horse-xgh/)
