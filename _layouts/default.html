@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+    <title>{{ site.title }}</title>
+
+    <script>
+      window.onload = onLoad;
+
+      function onLoad() {
+        anchors.options.placement = "left";
+        anchors.add();
+
+        const scrollTopButton = document.getElementById("scroll-to-top-btn");
+        const header = document.getElementsByClassName('page-header')[0];
+        const scrollThreshold = header.clientHeight;
+
+        window.onscroll = function onScroll() {
+          if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            scrollTopButton.style.opacity = "1";
+          } else {
+            scrollTopButton.style.opacity = "0";
+          }
+        }
+
+        window.onscroll(undefined);
+
+        const languagesSelect = document.getElementById("languages");
+        languagesSelect.value =  resolvePageLanguage();
+        languagesSelect.onchange = onLanguageChange;
+      }
+
+      function onLanguageChange(e) {
+          const language = e.target.value
+
+          window.location.hash = "";
+
+          if (language === "en") {
+              window.location.pathname = "/"
+          } else {
+              window.location.pathname = "/" + language + ".html"
+          }
+      }
+
+      function resolvePageLanguage() {
+          const currentPath = window.location.pathname
+
+          if (!currentPath || currentPath === "/") {
+              return "en"
+          }
+
+          return window.location.pathname.substring(1, window.location.pathname.indexOf("."))
+      }
+    
+    </script>
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ site.title }}</h1>
+      <select id="languages" class="btn">
+        <option value="en">English</option>
+        <option value="pt-br">Português Brasileiro</option>
+      </select>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <a target="_blank" href="{{ site.github.repository_url }}/issues/new" class="btn">Contribute</a>
+        
+        <div class="site-footer-credits">
+            <span><a href="{{ site.github.repository_url }}">{{ site.title }}</a> is maintained by <a href="https://brunomb.com" target="_blank">{{ site.github.owner_name }}</a>.</span>
+            <span>
+                Credits go to the original & deactivated <a href="https://gohorseprocess.wordpress.com">gohorseprocess wordpress</a>
+                and translation authors
+            </span>
+            <span>This page is powered by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+        </div>
+    </footer>
+
+    <a id="scroll-to-top-btn" href="#">
+        <span class="arrow"></span>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  </body>
+</html>

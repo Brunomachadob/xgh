@@ -1,0 +1,100 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+$color: #1788fa;
+$footer-color: rgba(255, 255, 255, 0.5);
+
+$header-bg-color: #065a83;
+$header-bg-color-secondary: #1788fa;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+#languages {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+
+    border-radius: 50%;
+    background-color: $header-bg-color;
+    background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+
+    &:hover > span.arrow {
+        border-color: white;
+        margin-top: 10px;
+    }
+
+    span.arrow {
+        border: solid rgba(255, 255, 255, 0.7);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+
+        margin-left: 9px;
+        margin-top: 11px;
+
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+}
+
+main.main-content {
+    h3 {
+        color: $color;
+    }
+}
+
+header.page-header {
+    color: $header-heading-color;
+    background-color: $header-bg-color;
+    background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+
+    .btn {
+        margin-bottom: 0;
+    }
+}
+
+footer.site-footer {
+    color: $header-heading-color;
+    background-color: $header-bg-color;
+    background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+    padding: 3rem 10rem;
+    position: relative;
+
+    .btn {
+        margin-bottom: 0;
+    }
+
+    .site-footer-credits {
+        padding-top: 2rem;
+        color: rgba(255, 255, 255, 0.8);
+        display: block;
+
+        span {
+            display: block;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+}
