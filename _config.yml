@@ -2,4 +2,13 @@ theme: jekyll-theme-cayman
 baseurl: /xgh
 title: eXtreme Go Horse (XGH) Process
 description: There's nothing else to say about it.
+lang: en-US
+logo: /assets/extreme-logo.png
 google_analytics: G-4K57ZB5WJP
+webmaster_verifications:
+  google: j7PM3PUr3M8hy37aUOzCP6w5GDKOW8qMDRwXXKdBtgI
+
+social:
+  name: Bruno Brandao
+  links:
+    - https://github.com/brunomachadob

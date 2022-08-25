@@ -1,5 +1,9 @@
+---
+title: ABC
+test: ABC
+---
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang }}">
   <head>
 
     {% if site.google_analytics %}
@@ -68,7 +72,8 @@
     
     </script>
 
-{% seo %}
+{% seo title=false %}
+    <meta property="og:image" content="{{ '/assets/extreme-logo.png?v=' | append: site.github.build_revision | relative_url }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
