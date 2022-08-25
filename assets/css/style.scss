@@ -29,8 +29,8 @@ body {
 
 #scroll-to-top-btn {
     position: fixed;
-    bottom: 5%;
-    right: 5%;
+    bottom: 2em;
+    right: 2em;
     width: 30px;
     height: 30px;
     opacity: 0;
@@ -61,12 +61,6 @@ body {
     }
 }
 
-main.main-content {
-    h3 {
-        color: $color;
-    }
-}
-
 header.page-header {
     padding: 2rem 3rem;
     background-color: $header-bg-color;
@@ -77,7 +71,19 @@ header.page-header {
     }
 
     .logo {
-        width: 15em;
+        max-width: 15em;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+
+main.main-content {
+    padding: 2rem 5rem;
+    max-width: 90em;
+
+    h3 {
+        color: $color;
     }
 }
 
@@ -85,11 +91,12 @@ footer.site-footer {
     color: $header-heading-color;
     background-color: $header-bg-color;
     background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
-    padding: 3rem 10rem;
+    padding: 2rem 5rem;
     position: relative;
 
     .btn {
         margin-bottom: 0;
+        text-align: center;
     }
 
     .site-footer-credits {
@@ -97,12 +104,30 @@ footer.site-footer {
         color: rgba(255, 255, 255, 0.8);
         display: block;
 
-        span.block {
-            display: block;
-        }
-
         a {
             color: #fff;
         }
+
+        & > div {
+            margin: 0.2em;
+        }
+    }
+}
+
+@media screen and (max-width: 42em) {
+    #languages {
+        width: 70%;
+    }
+
+    main.main-content {
+        padding: 2rem 1rem;
+
+        h3 {
+            color: $color;
+        }
+    }
+
+    footer.site-footer {
+        padding: 2rem 1rem;
     }
 }
