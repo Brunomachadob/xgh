@@ -15,7 +15,7 @@ XGH is faster than any development process you know (see [Axiom 14](#14-xgh-is-n
 
 For every problem solved using XGH, ~7 more are created.
 And all of them will be solved using XGH.
-Therefore, XGH tends to infinite.
+Therefore, XGH tends to be infinite.
 
 ### 4. XGH is completely reactive.
 
@@ -23,7 +23,7 @@ Errors only come to exist when they appear.
 
 ### 5. In XGH anything goes.
 
-It solves the problem? It compiled? You commit and don't think about it anymore.
+Does it solve the problem? Did it compile? You commit and don't think about it anymore.
 
 ### 6. You commit always before updating.
 
@@ -40,7 +40,7 @@ For people using XGH someday the boat sinks.
 As time passes by, the probability only increases.
 You better have your resume ready for when the thing comes down. Or have someone else to blame.
 
-### 9. Be authentic. XGH don't follow patterns.
+### 9. Be authentic. XGH doesn't follow patterns.
 
 Write code as you may want. If it solves the problem, just commit and forget about it.
 
@@ -58,7 +58,7 @@ There's no owner and everyone does whatever they want when the problems and requ
 ### 12. Always believe in improvement promises.
 
 Putting `TODO` comments in the code as a promise that the code will be improved later helps the XGH developer.
-Nobody will feel guilt for the shit that has been done. Sure there won't be no refactoring (see [Axiom 10](#10-theres-no-refactoring-just-rework)).
+Nobody will feel guilt for the shit that has been done. Sure there won't be any refactoring (see [Axiom 10](#10-theres-no-refactoring-just-rework)).
 
 ### 13. XGH is absolute.
 
@@ -80,11 +80,11 @@ XGH requires no thinking (see [Axiom 1](#1-i-think-therefore-its-not-xgh)).
 ### 16. Don't try to row against the tide.
 
 If your colleagues use XGH and you are the only sissy who wants to do things the right way then quit it!
-For any design pattern that you apply correctly your colleagues will generate 10 times more rotten code using XGH.
+For any design pattern that you apply correctly, your colleagues will generate 10 times more rotten code using XGH.
 
-### 17. XGH is not dangerous, until you try putting some order into it.
+### 17. XGH is not dangerous until you try putting some order into it.
 
-This axiom is very complex, but it says that a XGH project is always in chaos.
+This axiom is very complex, but it says that an XGH project is always in chaos.
 Don't try to put order into XGH (see [Axiom 16](#16-dont-try-to-row-against-the-tide)).
 It's useless, and you'll spend a lot of precious time. 
 This will make things go down even faster (see [Axiom 8](#8-be-ready-to-jump-off-when-the-boat-starts-sinking-or-blame-someone-else)).
@@ -100,8 +100,8 @@ When that happens only XGH can save you.
 
 ### 19. If it's working, don't bother.
 
-Never ever change - or even think of question - a working code.
-That's a complete waste of time, even more because refactoring doesn't exist (see [Axiom 10](#10-theres-no-refactoring-just-rework)).
+Never ever change - or even think of a question - a working code.
+That's a complete waste of time, even more, because refactoring doesn't exist (see [Axiom 10](#10-theres-no-refactoring-just-rework)).
 Time is the engine behind XGH and quality is just a meaningless detail.
 
 ### 20. Tests are for pussies.
@@ -112,14 +112,14 @@ If it compiles it's good.
 
 ### 21. Be used to the 'living on the edge' feeling.
 
-Failure and sucess are really similar and XGH is not different.
-People normally think that a project can have greater chances of failing when using XGH.
+Failure and success are really similar and XGH is not different.
+People normally think that a project can have a greater chance of failing when using XGH.
 But success is just a way of seeing it.
-The project failed. You learned something with it? Then for you, it was a success!
+The project failed. Did you learn something from it? Then for you, it was a success!
 
 ### 22. The problem is only yours when your name is on the code docs.
 
-Never touch a class of code which you're not the author.
+Never touch a class of code in which you're not the author.
 When a team member dies or stays away for too long the thing will go down.
 When that happens use [Axiom 8](#8-be-ready-to-jump-off-when-the-boat-starts-sinking-or-blame-someone-else).
 
